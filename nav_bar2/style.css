@@ -1,0 +1,82 @@
+:root {
+  --red: #ff1f45;
+  --white: #fafafa;
+
+  --padding: 16px;
+  --font-size-large: 24px;
+  --font-size-medium: 20px;
+  --font-weight: 600;
+}
+* {
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: var(--font-weight);
+}
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--red);
+  align-items: center;
+  padding: var(--padding);
+}
+.navBar .logo {
+  font-size: var(--font-size-large);
+}
+.navBar .menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.navBar .menu li {
+  font-size: var(--font-size-medium);
+  padding: 0 var(--padding);
+}
+
+.navBar .icon {
+  font-size: var(--font-size-medium);
+}
+.toggleBtn {
+  display: none;
+  font-size: var(--font-size-medium);
+}
+@media screen and (min-width: 768px) {
+  .navBar .menu li:hover a {
+    border-bottom: 3px solid var(--white);
+  }
+}
+@media screen and (max-width: 768px) {
+  .navBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navBar .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navBar .menu li {
+    text-align: center;
+    padding: 8px 0;
+  }
+  .navBar .icon {
+    position: absolute;
+    right: calc(var(--padding) * 3);
+    /* padding-top: 2px; */
+  }
+  .toggleBtn {
+    display: block;
+    position: absolute;
+    right: var(--padding);
+    /* padding-top: 2px; */
+  }
+  .menu.active {
+    display: block;
+  }
+}

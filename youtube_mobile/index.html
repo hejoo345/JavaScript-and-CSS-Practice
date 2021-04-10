@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Youtube</title>
+    <script
+      src="https://kit.fontawesome.com/57c4a97f0b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="logo">
+        <i class="fab fa-youtube"></i>
+        <span class="title">Youtube</span>
+      </div>
+      <div class="icons">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-ellipsis-v"></i>
+      </div>
+    </header>
+
+    <!-- Video player -->
+    <section class="player">
+      <video controls src="./video/video.mp4"></video>
+    </section>
+
+    <div class="infoAndUpNext">
+      <!-- video info -->
+      <section class="info">
+        <!-- metadata -->
+        <div class="metadata">
+          <ul class="hashtags">
+            <li>#NCT127</li>
+            <li>#Punch</li>
+            <li>#UnCut</li>
+          </ul>
+          <div class="titleAndBtn">
+            <span class="title clamp"
+              >[Un Cut]Take #3 | 'Punch' Dance Practice | NCT 127's 2nd Album
+              Repackage 'NCT #127 Neo Zone: The Final Round' is out! | NCT 127's
+              2nd Album Repackage 'NCT #127 Neo Zone: The Final Round' is
+              out!</span
+            >
+            <button class="moreBtn">
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </div>
+          <span class="views">조회수 580,217회|2020.7.16</span>
+        </div>
+
+        <!-- action -->
+        <ul class="actions">
+          <li>
+            <button>
+              <i class="active fas fa-thumbs-up"></i><span>10만</span>
+            </button>
+          </li>
+          <li>
+            <button><i class="fas fa-thumbs-down"></i><span>1</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-share"></i><span>공유</span></button>
+          </li>
+          <li>
+            <button><i class="fas fa-plus"></i><span>저장</span></button>
+          </li>
+        </ul>
+
+        <!-- channel -->
+        <div class="channel">
+          <div class="metadata">
+            <img src="img/nct.jpg" />
+            <div class="info">
+              <span class="name">채널 NCT DAILY</span>
+              <span class="subscribe">구독자 248만명</span>
+            </div>
+          </div>
+          <button class="subscribe">subscribe</button>
+          <!-- 나중에 구독중 버튼바꾸고 알림설정 -->
+        </div>
+      </section>
+
+      <!-- Up next -->
+      <section class="upNext">
+        <span class="title">Up next</span>
+        <ul>
+          <li class="item">
+            <div class="img"><img src="img/1.PNG" alt="" /></div>
+            <div class="info">
+              <span class="title"
+                >[Un Cut]Take #4 | 'Ridin' Dance Practice</span
+              >
+              <span class="name">채널 NCT DAILY</span>
+              <span class="views">조회수 89만회</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="item">
+            <div class="img"><img src="img/2.PNG" alt="" /></div>
+            <div class="info">
+              <span class="title">THE OPENING SHOW: WELCOME TO NEO ZONE</span>
+              <span class="name">채널 NCT DAILY</span>
+              <span class="views">조회수 81만회</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+          <li class="item">
+            <div class="img"><img src="img/3.PNG" alt="" /></div>
+            <div class="info">
+              <span class="title">Dream VS Dream | RENJUN VS CHENLE</span>
+              <span class="name">채널 NCT DAILY</span>
+              <span class="views">조회수 77만회</span>
+            </div>
+            <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
