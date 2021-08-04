@@ -1,4 +1,5 @@
 // Remove Duplicates!
+// 중복을 없애자!
 const array = ['🐶', '🐱', '🐈', '🐶', '🦮', '🐱'];
 
 console.log(array);
