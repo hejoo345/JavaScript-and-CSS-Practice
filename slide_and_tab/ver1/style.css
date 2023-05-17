@@ -1,0 +1,69 @@
+@import url(https://font.imbc.com/noto/noto.css);
+@import url(https://font.imbc.com/mbcnew/mbcnew.css);
+
+.slide-wrap {
+  position: relative;
+}
+.slide-item {
+  display: none;
+}
+.slide-item.active {
+  display: block;
+}
+
+.prev,
+.next {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+}
+.next {
+  right: 0;
+}
+
+.slide-dots {
+  position: absolute;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  width: 100%;
+  top: 95%;
+}
+.slide-dots li {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  letter-spacing: 10px;
+  margin: 0 5px;
+  background-color: #d6d4d4;
+}
+.slide-dots li.active {
+  background-color: #9a9a9a;
+}
+.tabs {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  list-style-type: none;
+}
+.tabs li {
+  width: 100px;
+  text-align: center;
+}
+.tabs li:first-child {
+  border-right: solid 1px #9a9a9a;
+}
+.tab-link {
+  opacity: 0.5;
+}
+.tab-link.active {
+  opacity: 1;
+}
+.tab-cont {
+  display: none;
+}
+.tab-cont.active {
+  display: block;
+}
